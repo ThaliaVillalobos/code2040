@@ -4,7 +4,7 @@ import json
 
 def main():
     #requsting information from API
-    payload = {'token':'aac0d88a55258415fc2556af0c0c65b9', 'needle':'', 'haystack': ''}
+    payload = {'token':'', 'needle':'', 'haystack': ''}
     data= requests.post("http://challenge.code2040.org/api/haystack", params = payload)
 
     #To view the information
@@ -26,7 +26,7 @@ def main():
     #print(index)
 
     #Posting my results
-    load = {'token':'aac0d88a55258415fc2556af0c0c65b9', 'needle':index}
+    load = {'token':'', 'needle':index}
     requests.post("http://challenge.code2040.org/api/haystack/validate", params =load)
     
 
